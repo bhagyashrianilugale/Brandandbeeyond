@@ -103,18 +103,31 @@ body{
 .img_1{
     height:80vh;
     width: 80vh;
-    padding: 40px;
+    padding: 20px 40px;
     position: relative;
+    content: url("./assets/img1.jpg");
 }
-
+    
 .img_2{
     height: 60vh;
     width: 60vh;
     position: absolute;
     top: 820px;
     margin-left: 200px;
-    border: 10px solid;
-    border-color: white;
+    border: 10px solid white;
+    content: url("./assets/img2.jpg");
+   
+}
+
+.img_1:hover{
+    content:url("./assets/blackwhiteimg_1.jpg");
+    cursor: pointer;
+    transition: linear 0.7;
+}
+
+.img_2:hover{
+    content:url("./assets/blackwhitemg_2.jpg");
+    cursor: pointer;
 }
 
 
