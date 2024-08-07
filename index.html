@@ -5,9 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+          crossorigin="anonymous">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.js"></script>
 </head>
 <body>
-    <h1 id="title">ToochWood</h1>
+   
+    <footer>
+        <div id="footer_box">
+          <div>
+             <img class="footer_logo" src="https://brandandbeeyond.com/wp-content/uploads/2023/12/BrandBeeyond_White_500x200.png" alt="logo_img">
+             <div class="footer_socialmediaicons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+          <div class="contact_section">
+              <h4>Contact Us</h4>
+              <p>Business Bay JITO, Office No: 12, 2nd Floor,<br/>
+                Mumbai Naka, Matoshree Nagar, Nashik, Maharashtra<br/>
+                <i class="fa-solid fa-phone-volume"></i> 7030093930<br/>
+                <i class="fa-solid fa-phone-volume"></i> 7030094940<br/>
+                <i class="fa-solid fa-envelope"></i> grow@brandandbeeyond.com</p>
+          </div>
+          <div class="map-section">
+               <h3>Reach Us Here</h3>
+               <div id="map"></div> 
+           </div>
+        </div>
+    </footer>
+    
     <script src="./app.js"></script>
+    <script>
+        const mapToken="pk.eyJ1IjoiZGVsdGEtc3R1ZHVlbnQiLCJhIjoiY2xvMDk0MTVhMTJ3ZDJrcGR5ZDFkaHl4ciJ9.Gj2VU1wvxc7rFVt5E4KLOQ";
+        mapboxgl.accessToken = mapToken;
+
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            center: [138.584710, -35.587130], // starting position [lng, lat]. Note that lat must be set between -90 and 90
+            zoom: 9 // starting zoom
+        });
+    </script>
 </body>
 </html>

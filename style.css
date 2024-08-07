@@ -1,3 +1,56 @@
-#title{
-    color:brown
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
+
+
+/*footer*/
+footer{
+    height: 60vh;
+    background-color: black;
+    color: white;
+    width: 100%;
+    
+}
+
+#footer_box{
+    padding: 40px 80px 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer_logo{
+    height: 130px;
+    width: 250px;
+}
+
+.footer_socialmediaicons i{
+     margin: 10px;
+     font-size: 25px;
+}
+
+.footer_socialmediaicons{
+    margin: 20px 100px 5px 100px;
+}
+
+.contact_section{
+   width: 350px;
+}
+
+/*contact section*/
+
+.contact_section p i{
+   margin-top: 5px;
+}
+
+/*map*/
+.map-section{
+    background-color: brown;
+}
+#map { 
+    height: 40vh;
+    width: 400px;
+    
+    }
