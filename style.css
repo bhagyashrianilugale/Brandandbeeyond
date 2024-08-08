@@ -60,16 +60,23 @@ nav ul li a:hover::after{
 
 #main_section{
     background-color: rgb(59,59,59);
-    height: 70vh;
-    color:white;
-    font-weight: 500;
-    font-size: 40px;
+    max-height: 70vh;
+    display: flex;
 
+}
+
+#bee_img{
+    height: 50px;
+    width: 50px;
 }
 
 .main_text{
     padding:50px;
     opacity: 0;
+    margin: 0 0 0 40%;
+    color:white;
+    font-weight: 500;
+    font-size: 40px;
     transform: translateY(50px);
     /* animation: moveup linear 0.7s; */
 }
@@ -77,10 +84,8 @@ nav ul li a:hover::after{
 
 .degree{
     color: rgb(251,177,2);
-    font-size: 80px;
+    font-size: 100px;
     font-weight: 500;
-    margin: 0;
-    
 }
 
 #container {
@@ -246,7 +251,7 @@ nav ul li a:hover::after{
 }
 
 .card{
-     height: 90%;
+     max-height: 90%;
      width: 50vh;
      cursor:pointer;
      margin: 90px 30px 10px 30px;
@@ -458,9 +463,6 @@ footer{
 }
 
 /*map*/
-.map-section{
-    
-}
 #map { 
     height: 40vh;
     width: 400px;
@@ -469,6 +471,78 @@ footer{
 
 /*Styles For Mobile devices*/
 @media only screen and (max-width: 767px){
+    #main_section{
+      flex: none;
+      height: 90vh;
+    }
+    .main_text{
+        margin: 0;
+        padding: 0;
+        margin-top:80%;
+        font-size: 30px;
+    }
+
+    .img_1{
+        height:40vh;
+        width: 40vh;
+        padding: 10px 20px;
+    }
+        
+    .img_2{
+        height: 40vh;
+        width: 40vh;
+        position: absolute;
+}
+
+    .degree{
+      font-size: 80px;
+    }
+    
+    #firstsection{
+        height:160vh;
+        width:40%;
+        flex:none;
+    }
+    
+   
+    .content_section p{
+        padding: 20px 0;
+        width: 40vh;
+        text-align: justify;
+        font-size: 14px;
+       
+    }
+    
+    .clientle_card div{
+        height: 210px;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: rgb(253,253,253);
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .clientle_cards{
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        margin: 5px;
+    }
+    .card_title{
+        padding: 10px 20px;
+        margin: 0px 10px;
+        top:400px;
+    }
+    .card{
+        width:80vh;
+        margin: 20px 0px;
+        height: 40vh;
+    }
+    #forthsection{
+        padding: 10px;
+    }
+    .book_poster{
+       display: none;
+    }
     #footer_box{
         display: block;
     }
@@ -513,6 +587,7 @@ footer{
         height: 400px;
         width: 50px;
     }
+    
     #footer_box{
         padding: 20px;
        
