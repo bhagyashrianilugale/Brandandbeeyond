@@ -8,7 +8,15 @@ gsap.to(
     
 );
 
-let sideMenu = document.getElementById("sidemenu");
+gsap.to(
+  ".book_poster",{
+    y:0,
+    opacity:1,
+    deplay:0.8
+  }
+)
+
+let sideMenu = document.querySelector("#sidemenu");
 
 function openMenu(){
   sideMenu.style.right = "0";
@@ -17,3 +25,4 @@ function openMenu(){
 function closeMenu(){
   sideMenu.style.right = "-200px";
 }
+
