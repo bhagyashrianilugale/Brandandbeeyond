@@ -470,7 +470,7 @@ footer{
 }
 
 /*Styles For Mobile devices*/
-@media only screen and (max-width: 767px){
+@media only screen and (min-width:412) and (max-width:915){
     #main_section{
       flex: none;
       height: 90vh;
@@ -483,15 +483,16 @@ footer{
     }
 
     .img_1{
-        height:40vh;
-        width: 40vh;
+        height:60vh;
+        width: 60vh;
         padding: 10px 20px;
     }
         
     .img_2{
-        height: 40vh;
-        width: 40vh;
-        position: absolute;
+        height: 60vh;
+        width: 60vh;
+        margin: 10px;
+        content: url("./assets/img2.jpg");
 }
 
     .degree{
@@ -541,7 +542,10 @@ footer{
         padding: 10px;
     }
     .book_poster{
-       display: none;
+       height: 450px;
+       width: 300px;
+       margin: 30px;
+       top:50px;
     }
     #footer_box{
         display: block;
