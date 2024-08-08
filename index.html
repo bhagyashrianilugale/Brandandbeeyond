@@ -18,65 +18,34 @@
 </head>
 <body>
     <header>
-        <nav class="navbar custom-navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <img class="nav_logo" src="https://brandandbeeyond.com/wp-content/uploads/2023/12/BrandBeeyond_White_500x200.png" alt="logo_img">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">ABOUT US</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      SERVICES
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Corporate Brand Strategy</a></li>
-                      <li><a class="dropdown-item" href="#">Business Model</a></li>
-                      <li><a class="dropdown-item" href="#">Innovation</a></li>
-                      <li><a class="dropdown-item" href="#">Brand Positioning</a></li>
-                      <li><a class="dropdown-item" href="#">Brand Design and<br/>Communication</a></li>
-                      <li><a class="dropdown-item" href="#">360&deg; Performance Marketing<br/></a></li>
-                      <li><a class="dropdown-item" href="#">Brand Activation and<br/>Monitoring</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">PORTFOLIO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">OUR CLIENTLE</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">BLOG</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active btn btn-light" aria-current="page" href="#contact_section">CONTACT US</a>
-                  </li>
-                </ul>
-                
-              </div>
-            </div>
-          </nav>
-          <div class="main_section">
-                 <div class="beehive">
-                      <div class="hive"></div>
-                 </div>
-                 <p class="main_text">
-                      WE ARE<br/>
-                      <span class="degree">360 &deg;</span><br/>
-                      &nbsp;&nbsp;&nbsp;BRAND STRATEGY<br/>
-                      <span style="color: rgb(251,177,2);">UN</span>MAKETING AGENCY
-                  </p> 
-          </div>
+      <nav>
+        <img class="logo" src="https://brandandbeeyond.com/wp-content/uploads/2023/12/BrandBeeyond_White_500x200.png" alt="logo_img">
+        <ul id="sidemenu">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#firstsection">ABOUT US</a></li>
+            <li><a href="#thirdsection">SERVICES</a></li>
+            <li><a href="#fifthsection">PORTFOLIO</a></li>
+            <li><a href="#secondsection">OUR CLIENTLE</a></li>
+            <li><a href="#forthsection">BLOG</a></li>
+            <li><a href="#contact_section">CONTACT US</a></li>
+            <i class="fa-regular fa-circle-xmark fas" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars fas" onclick="openMenu()"></i>
     </header>
     <main>
-      <div class="firstsection">
+      <div class="main_section">
+           <div class="beehive">
+             <div class="hive"></div>
+           </div>
+           <p class="main_text">
+             WE ARE<br/>
+             <span class="degree">360 &deg;</span><br/>
+             &nbsp;&nbsp;&nbsp;BRAND STRATEGY<br/>
+             <span style="color: rgb(251,177,2);">UN</span>MAKETING AGENCY
+          </p> 
+      </div>
+
+      <div id="firstsection">
             <div class="content_section">
               <h3>India's Premier Strategic Unmarketing Agency for Visionary Entrepreneurs</h3>
               <p>BrandandBeeyond stands as India’s foremost Strategic Unmarketing agency, committed to redefining traditional 
@@ -94,12 +63,27 @@
               <div><img class="img_2"/></div>
           </div>
         </div>
-        <div class="fifthsection">
-              <div class="fitthsection_links">
-                 <a>All</a>
-                 <a>Website</a>
-              </div>
-              <div class="website-list">
+        <div id="secondsection">
+            <div class="map_img" ></div>
+              <ul class="radar">
+                 <li></li>
+                 <li></li>
+                 <li></li>
+                 <li></li>
+               </ul>
+            
+        </div>
+        <div id="fifthsection">
+                 <div class="fifthsection_info">
+                   <h2>We Are Creative Bees</h2>
+                     <hr style="width:20%; margin: auto;"/>
+                   <i>&quot;Creativity: the spark that ignites endless possibilities.&quot;</i>
+                </div>
+                <div class="fifthsection_links">
+                     <span>All</span>
+                     <span>Website</span>
+                </div>
+               <div class="website-list">
                     <div class="website" id="All">
                          <img src="./assets/website1.png" alt="website_img">
                            <div class="layer">
