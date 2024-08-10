@@ -242,7 +242,7 @@ nav ul li a:hover::after{
     min-height: 80vh;
     width: 100%;
     background-color: rgb(246, 242, 242);
-    padding: 80px;
+    padding: 60px;
 }
 
 .cards{
@@ -254,7 +254,7 @@ nav ul li a:hover::after{
      max-height: 90%;
      width: 50vh;
      cursor:pointer;
-     margin: 90px 30px 10px 30px;
+     margin: 90px 20px 10px 20px;
      transition: linear 0.5s;
 }
 
