@@ -1,1 +1,1 @@
-Live URL: brandandbeeyond.vercel.app
+Live URL: https://brandandbeeyond.vercel.app/
